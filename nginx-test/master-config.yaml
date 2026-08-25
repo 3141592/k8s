@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: master
+
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-test-config
+  namespace: master
+data:
+  APP_ENV: master
+  APP_MESSAGE: "Hello from the master environment"
