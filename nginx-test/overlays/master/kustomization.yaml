@@ -6,6 +6,7 @@ namespace: master
 resources:
   - ../../base
   - namespace.yaml
+  - ingress.yaml
 
 configMapGenerator:
   - name: nginx-test-config
