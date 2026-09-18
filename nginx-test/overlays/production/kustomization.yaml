@@ -6,9 +6,16 @@ namespace: production
 resources:
   - ../../base
   - namespace.yaml
+  - ingress.yaml
 
 configMapGenerator:
   - name: nginx-test-config
     literals:
       - APP_ENV=production
       - APP_MESSAGE=Hello from the production environment
+
+secretGenerator:
+  - name: nginx-test-secret
+    literals:
+      - APP_SECRET=super-secret-test-value
+

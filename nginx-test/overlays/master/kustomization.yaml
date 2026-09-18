@@ -13,3 +13,8 @@ configMapGenerator:
     literals:
       - APP_ENV=master
       - APP_MESSAGE=Hello from the master environment UPDATED
+
+secretGenerator:
+  - name: nginx-test-secret
+    literals:
+      - APP_SECRET=super-secret-test-value

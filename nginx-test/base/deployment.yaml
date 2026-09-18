@@ -18,3 +18,5 @@ spec:
           envFrom:
             - configMapRef:
                 name: nginx-test-config
+            - secretRef:
+                name: nginx-test-secret
